@@ -1,92 +1,84 @@
 {
-    "name": "ng-ticker-angular",
-    "version": "0.0.0-development",
-    "scripts": {
-        "ng": "ng",
-        "start": "ng serve",
-        "build": "ng build",
-        "build:lib": "ng build ng-ticker --prod",
-        "test": "ng test",
-        "lint": "ng lint",
-        "e2e": "ng e2e",
-        "verdaccio:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish --registery hhtp://localhost:4873",
-        "ng-ticker:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish",
-        "lint-lib": "ng lint ng-ticker",
-        "commit": "git-cz"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
-    },
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "ng lint",
-            "commit-msg": ""
-        }
-    },
-    "release": {
-        "pkgRoot": "dist/ng-ticker"
-    },
-    "private": true,
-    "dependencies": {
-        "@angular/animations": "~10.0.6",
-        "@angular/common": "~10.0.6",
-        "@angular/compiler": "~10.0.6",
-        "@angular/core": "~10.0.6",
-        "@angular/forms": "~10.0.6",
-        "@angular/platform-browser": "~10.0.6",
-        "@angular/platform-browser-dynamic": "~10.0.6",
-        "@angular/router": "~10.0.6",
-        "g": "^2.0.1",
-        "http-server": "^0.12.3",
-        "ng-ticker": "^2.1.0",
-        "rxjs": "~6.5.5",
-        "tslib": "^2.0.0",
-        "zone.js": "~0.10.3"
-    },
-    "devDependencies": {
-        "@angular-devkit/build-angular": "~0.1000.6",
-        "@angular-devkit/build-ng-packagr": "~0.1000.6",
-        "@angular/cli": "~10.0.5",
-        "@angular/compiler-cli": "~10.0.6",
-        "@commitlint/cli": "^9.1.2",
-        "@commitlint/config-conventional": "^10.0.0",
-        "@types/jasmine": "~3.5.0",
-        "@types/jasminewd2": "~2.0.3",
-        "@types/node": "^12.11.1",
-        "codelyzer": "^6.0.0",
-        "cz-conventional-changelog": "^3.3.0",
-        "husky": "^4.2.5",
-        "install": "^0.13.0",
-        "jasmine-core": "~3.5.0",
-        "jasmine-spec-reporter": "~5.0.0",
-        "karma": "~5.0.0",
-        "karma-chrome-launcher": "~3.1.0",
-        "karma-coverage-istanbul-reporter": "~3.0.2",
-        "karma-jasmine": "~3.3.0",
-        "karma-jasmine-html-reporter": "^1.5.0",
-        "ng-packagr": "^10.0.0",
-        "protractor": "~7.0.0",
-        "semantic-release": "^17.1.1",
-        "travis-deploy-once": "^5.0.11",
-        "ts-node": "~8.3.0",
-        "tslint": "~6.1.0",
-        "typescript": "~3.9.5"
-    },
-    "prettier": {
-        "tabWidth": 4,
-        "singleQuote": true,
-        "bracketSpacing": true,
-        "printWidth": 80
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dheeraj237/ng-ticker.git"
+  "name": "ng-ticker-angular",
+  "version": "0.0.0-development",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build:lib": "ng build ng-ticker --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "verdaccio:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish --registery hhtp://localhost:4873",
+    "ng-ticker:publish": "ng build ng-ticker --prod && cd dist/ng-ticker && npm publish",
+    "lint-lib": "ng lint ng-ticker",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "release": {
+    "pkgRoot": "dist/ng-ticker"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^16.1.7",
+    "@angular/common": "^16.1.7",
+    "@angular/compiler": "^16.1.7",
+    "@angular/core": "^16.1.7",
+    "@angular/forms": "^16.1.7",
+    "@angular/platform-browser": "^16.1.7",
+    "@angular/platform-browser-dynamic": "^16.1.7",
+    "@angular/router": "^16.1.7",
+    "g": "^2.0.1",
+    "http-server": "^0.12.3",
+    "ng-ticker": "^2.1.0",
+    "rxjs": "~6.5.5",
+    "tslib": "^2.6.1",
+    "zone.js": "~0.13.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.1.6",
+    "@angular/cli": "^16.1.6",
+    "@angular/compiler-cli": "^16.1.7",
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^10.0.0",
+    "@types/jasmine": "~3.6.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "install": "^0.13.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.4.2",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^16.1.0",
+    "protractor": "~7.0.0",
+    "semantic-release": "^17.1.1",
+    "travis-deploy-once": "^5.0.11",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.9.5"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "printWidth": 80
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dheeraj237/ng-ticker.git"
+  }
 }

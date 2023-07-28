@@ -41,7 +41,6 @@
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "extractLicenses": true,
                             "vendorChunk": false,
@@ -93,17 +92,6 @@
                         "scripts": []
                     }
                 },
-                "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
-                    "options": {
-                        "tsConfig": [
-                            "projects/web-app/tsconfig.app.json",
-                            "projects/web-app/tsconfig.spec.json",
-                            "projects/web-app/e2e/tsconfig.json"
-                        ],
-                        "exclude": ["**/node_modules/**"]
-                    }
-                },
                 "e2e": {
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
@@ -125,7 +113,7 @@
             "prefix": "ng",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
                         "tsConfig": "projects/ng-ticker/tsconfig.lib.json",
                         "project": "projects/ng-ticker/ng-package.json"
@@ -143,19 +131,11 @@
                         "tsConfig": "projects/ng-ticker/tsconfig.spec.json",
                         "karmaConfig": "projects/ng-ticker/karma.conf.js"
                     }
-                },
-                "lint": {
-                    "builder": "@angular-devkit/build-angular:tslint",
-                    "options": {
-                        "tsConfig": [
-                            "projects/ng-ticker/tsconfig.lib.json",
-                            "projects/ng-ticker/tsconfig.spec.json"
-                        ],
-                        "exclude": ["**/node_modules/**"]
-                    }
                 }
             }
         }
     },
-    "defaultProject": "web-app"
+    "cli": {
+      "analytics": "9fc76730-aeaf-459c-92f2-74a7dc71051b"
+    }
 }
